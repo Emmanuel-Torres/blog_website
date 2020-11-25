@@ -1,0 +1,47 @@
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 8px 10px;
+}
+input[type=text], textarea{
+    width: 20%;
+    padding: 10px 10px;
+    margin: 8px 10px;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    margin: 8px 10px;
+}
+
+#category-list{
+    margin-top: 8px;
+}
+
+#category-list label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin: 8px 10px;
+}
+
+#category-list input{
+    margin:  0px 0px 8px 8px;
+}
+
+/* textarea{
+    margin: 8px 10px;
+    border-radius: 5px;
+} */
+
+/*  I need to keep adding style to my web page.
+    currently I only have styled the page for adding a new blog.
+    Eventually, I will add styling to all the pages of the webpage.
+    I will need to add styling to the home page to display the posted Blogs,
+    I need to add styling to the nav bar that I am planning to include on the future.
+    I need to style in a better way the various types of formas that I use on my website.
+    For my home page, I plan to showcast the posted blogs in some sort of card view, 
+    each post will have its own card. */
