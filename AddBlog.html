@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add New Blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    
+</head>
+
+<body>
+    <header>
+        <h1>New Blog</h1>
+    </header>
+    <main>
+        <form id="create-blog" >
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="body">Body:</label><br>
+            <textarea id="body" name="body" rows="4" cols="22"></textarea><br>
+            
+            <h3>List of categories</h3>
+            <div id="category-list">
+                <!-- JavaScript prints the list of categories here -->
+            </div>
+<!--             
+            <input type="checkbox" id="category1" name="category1" value="Games">
+            <label for="category1">Games</label><br>
+            <input type="checkbox" id="category2" name="category2" value="Home">
+            <label for="category2">Home</label><br>
+            <input type="checkbox" id="category3" name="category3" value="Family">
+            <label for="category3">Family</label><br>
+            <input type="checkbox" id="category4" name="category4" value="Food">
+            <label for="category4">Food</label><br> -->
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </main>
+    <script src="/Controllers/print-categories.js"></script>
+</body>
+
+</html>
