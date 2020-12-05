@@ -1,7 +1,7 @@
-class Blog {
+export class Blog {
     constructor (newTitle, newDescription, postedOnDate){
         this.title = newTitle;
-        this.newDescription = newDescription;
+        this.description = newDescription;
         this.postedOnDate = postedOnDate;
         this.editedOnDate = null;
     }
