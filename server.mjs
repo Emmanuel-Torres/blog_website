@@ -1,5 +1,5 @@
-import { time } from 'console';
 import express from 'express'
+import bodyParser from 'body-parser'
 import {Blog} from './Models/Blog.mjs'
 
 const app = express();
@@ -13,13 +13,13 @@ app.get('/', (req, res) => {
     res.send('Hello World');    
 });
 
-app.get('/post', (req, res) => {
+app.get('/blogs', (req, res) => {
     res.send(blogs);
 });
 
-app.get('/addPost', (req, res) => {
+app.get('/addBlog', (req, res) => {
     blogs.push(new Blog(req.query.title, req.query.desc, Date.now()));
-    res.send('post added');
+    res.send('Blog added');
 });
 
 app.listen(port, () => {
