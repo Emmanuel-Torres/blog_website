@@ -1,4 +1,4 @@
-export class Blog {
+module.exports = class Blog {
     constructor (newTitle, newDescription, postedOnDate){
         this.title = newTitle;
         this.description = newDescription;
