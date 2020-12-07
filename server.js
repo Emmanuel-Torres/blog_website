@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
-const router = express.Router();
 const path = require('path');
 const port = 3000;
 var Blog = require('./Models/Blog.js');
 
 let blogs = [new Blog('title', 'Desc', Date.now())];
 
-// app.use(express.static('Pages'));
+app.use(express.json());
+app.use(express.urlencoded({extended: true }));
 
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/Pages/index.html'));
 });
 
@@ -22,12 +22,10 @@ app.get('/addBlog', (req, res) => {
     res.sendFile(path.join(__dirname+'/Pages/addblog.html'));
 });
 
-app.post('/addBlog', (req, res) => {
-    // blogs.push(new Blog(req.query.title, req.query.desc, Date.now()));
-    // res.send(req.body);
+app.post('/addblog', (req, res) => {
+    blogs.push(new Blog(req.body.title, req.body.desc, Date.now()));
+    res.redirect(200, '/blogs');
 });
-
-app.use('/', router);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
