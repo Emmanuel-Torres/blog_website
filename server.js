@@ -8,6 +8,8 @@ let blogs = [new Blog('title', 'Desc', Date.now())];
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true }));
+app.use(express.static('Pages/Styles'));
+app.use(express.static('Pages/Scripts'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/Pages/index.html'));
