@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
     fetch('http://localhost:3000/blogs')
     .then(r => r.json())
     .catch(reason => {
-
+        console.log('Failed to fetch blogs');
     })
     .then(blogs => {
         blogs.forEach(blog => {
