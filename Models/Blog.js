@@ -1,15 +1,8 @@
 module.exports = class Blog {
-    constructor (newTitle, newDescription, postedOnDate){
+    constructor (newTitle, newDescription, newCategory, postedOnDate){
         this.title = newTitle;
         this.description = newDescription;
+        this.category = newCategory;
         this.postedOnDate = postedOnDate;
-    }
-
-    setTitle(newTitle){
-        this.title = newTitle;
-    }
-
-    setDescriprion(newDescription){
-        this.description = newDescription;
     }
 }

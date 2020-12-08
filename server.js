@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const port = 3000;
-var Blog = require('./Models/Blog.js');
+const Blog = require('./Models/Blog.js');
 
 let blogs = [new Blog('Test Blog', 'Test Desc', 'Test Posted on Date')];
 
@@ -16,7 +16,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/blogs', (req, res) => {
-    //res.sendFile(path.join(__dirname+'/Pages/index.html'));
     res.send(blogs);
 });
 
@@ -31,7 +30,8 @@ app.post('/addblog', (req, res) => {
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
     blogs.push(new Blog(req.body.title, req.body.desc, today));
-    res.redirect(200, '/blogs');
+    console.log('Posted Succesfully added');
+    res.redirect(301, '/');
 });
 
 app.listen(port, () => {

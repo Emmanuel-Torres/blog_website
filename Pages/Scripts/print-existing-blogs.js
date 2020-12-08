@@ -12,7 +12,8 @@ window.addEventListener('load', function(){
                 <div class="card-header bg-dark  text-white">${blog.title}</div>
                 <div class="card-body bg-light">
                     <p>${blog.description}</p>
-                    <p>${blog.postedOnDate}</p>
+                    <p>Category: ${blog.category}</p>
+                    <p>Posted on: ${blog.postedOnDate}</p>
                 </div>
             </div>
             `
