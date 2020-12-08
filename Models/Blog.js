@@ -3,7 +3,6 @@ module.exports = class Blog {
         this.title = newTitle;
         this.description = newDescription;
         this.postedOnDate = postedOnDate;
-        this.editedOnDate = null;
     }
 
     setTitle(newTitle){
@@ -12,9 +11,5 @@ module.exports = class Blog {
 
     setDescriprion(newDescription){
         this.description = newDescription;
-    }
-
-    setEditedOnDate(editedOnDate){
-        this.editedOnDate = editedOnDate;
     }
 }
