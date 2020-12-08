@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./addBlog.css">
-    
+    <script src="./print-categories.js"></script>    
 </head>
 
 <body>
@@ -21,15 +21,15 @@
             <input type="text" id="title" name="title"><br>
             <label for="desc">Description:</label><br>
             <textarea id="desc" name="desc" rows="4" cols="22"></textarea><br>
-            
-            <label for="category-list">List of categories:</label>
-            <div id="category-list">
-            </div>
+            <label for="category-list">List of categories:</label><br>
+            <input list="category-list" id="category-choice">
+        
+            <datalist id="category-list">
+            </datalist>
 
-            <input type="submit" value="Post Blog">
+            <br><input type="submit" value="Post Blog">
         </form>
     </main>
-    <script src="./print-categories.js"></script>
 </body>
 
 </html>
