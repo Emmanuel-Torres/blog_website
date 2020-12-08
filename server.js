@@ -29,7 +29,8 @@ app.post('/addblog', (req, res) => {
     let mm = String(today.getMonth() + 1).padStart(2, '0');
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
-    blogs.push(new Blog(req.body.title, req.body.desc, today));
+    console.log(req.body);
+    blogs.push(new Blog(req.body.title, req.body.desc, req.body.category, today));
     console.log('Posted Succesfully added');
     res.redirect(301, '/');
 });
