@@ -24,7 +24,9 @@ window.addEventListener('load', function(){
             rowContainer.appendChild(document.createElement('p')).outerHTML = `
             <div class="col-lg-4">
                 <div class="card mb-3">
-                    <div class="card-header bg-dark  text-white">${blog.title}</div>
+                    <div class="card-header bg-dark  text-white">
+                        <h5>${blog.title}</h5>
+                    </div>
                     <div class="card-body bg-light">
                         <p>${blog.description}</p>
                         <p>Category: ${blog.category}</p>

@@ -8,12 +8,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./addBlog.css">
+    <link rel="stylesheet" href="./sharedHeader.css">
     <script src="./print-categories.js"></script>    
 </head>
 
 <body>
     <header>
-        <h1>New Blog</h1>
+        <a href="/" class="m-2 header-title">Add New Blog</a>
+        <div class="header-info">
+            <a class="header-home" href="/">Home</a>
+            <a href="/about">About</a>
+        </div>
     </header>
     <main>
         <form id="create-blog" action="/addblog" method="POST">
@@ -21,7 +26,7 @@
             <input type="text" id="title" name="title" required><br>
             <label for="desc">Description:</label><br>
             <textarea id="desc" name="desc" rows="4" cols="22" required></textarea><br>
-            <label for="category">List of categories:</label><br>
+            <label for="category">Category:</label><br>
             <input list="category-list" id="category" name="category">
         
             <datalist id="category-list">
