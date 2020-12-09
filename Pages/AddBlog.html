@@ -18,9 +18,9 @@
     <main>
         <form id="create-blog" action="/addblog" method="POST">
             <label for="title">Title:</label><br>
-            <input type="text" id="title" name="title"><br>
+            <input type="text" id="title" name="title" required><br>
             <label for="desc">Description:</label><br>
-            <textarea id="desc" name="desc" rows="4" cols="22"></textarea><br>
+            <textarea id="desc" name="desc" rows="4" cols="22" required></textarea><br>
             <label for="category">List of categories:</label><br>
             <input list="category-list" id="category" name="category">
         

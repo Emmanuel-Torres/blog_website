@@ -36,10 +36,9 @@ input[type=text], #category, textarea{
     color: white;
 }
 
-/* textarea{
-    margin: 8px 10px;
-    border-radius: 5px;
-} */
+input:hover, #category:hover, textarea:hover {
+    background-color: #eeeeee;
+} 
 
 /*  I need to keep adding style to my web page.
     currently I only have styled the page for adding a new blog.
