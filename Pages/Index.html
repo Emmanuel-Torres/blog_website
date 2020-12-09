@@ -7,19 +7,24 @@
     <title>Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
     <script src="./print-existing-blogs.js"></script>
 </head>
 
-<body class="m-2">
+<body>
     <header>
-        <h1>Main Page</h1>
+        <a href="/" class="m-2 header-title">Main Page</a>
+        <div class="header-info">
+            <a class="header-home" href="/">Home</a>
+            <a href="/about">About</a>
+        </div>
     </header>
     <main>
-        <h3>Add new Blog:</h3>
-        <a class="btn btn-outline-dark btn-sm" href="/addblog">Create Blog</a>
-        <h2>List of blogs goes here:</h2>
+        <h3 class="m-2">Add new Blog:</h3>
+        <a class="btn btn-outline-dark btn-sm m-2" href="/addblog">Create Blog</a>
+
+        <h4 class="m-2">Trending:</h4>
         <div class="container-fluid" id="listOfBlogs">
         </div>
     </main>
