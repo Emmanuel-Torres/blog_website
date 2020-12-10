@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sharedHeader.css">
+    <link rel="stylesheet" href="./about.css">
+    <title>Exhibits</title>
+</head>
+
+<body>
+    <header>
+        <a href="/addblog" class="m-2 header-title">Exhibits</a>
+        <div class="header-info">
+            <a class="header-home" href="/">Home</a>
+            <a href="/about">About</a>
+        </div>
+    </header>
+    <main>
+        <h1>Main Exhibits of the Project</h1>
+        <section>
+            <h2>Project Overview</h2>
+            <p>Simple web application that allows users to add blogs which are displayed (once posted) on the main page
+                of the website. This project uses HTML to create the structure of each page, vanilla JavaScript to add
+                add content to static HTML pages, Express JS running in Node JS to create a server that hosts the web
+                application, CSS to handle styling, and Bootstrap to handle complex styling (i.e. the grid used in the
+                main page).</p>
+        </section>
+        <section>
+            <h2>How does it work?</h2>
+            <p>HTML will provide a form that queries for basic information about the post (title, description, and
+                category). When the user hits submit, HTML will post the form via the POST method to one of the actions
+                in the Express JS server. In this case, the /addblog action</p>
+            <img src="./html_snippet.png">
+
+            <p>Express JS will handle this from via a request. It will take the request and turn it into a blog object,
+                which then gets added to a list of blogs inside the server.</p>
+            <img src="./express_snippet_add.png">
+
+            <p>After the user submits a post, he will be redirected back to the main page, and the blog will now be
+                there. The list of blogs is retrieved from the Express JS server via a fetch call. This call will
+                retrieve the list of blogs from the server, and then will add them to the main page.</p>
+            <img src="./ajax_snippet.png">
+
+            <p>Once the list of blogs is retrieved, JavaScript will determine how many rows the bootstrap container
+                needs. Once this is done, JavaScript will add up to 3 blogs per row.
+            </p>
+
+            <img src="./ajax_snippet_print.png">
+
+            <p>Once all this work is done, the main page will have the list of already existing blogs plus the newly
+                added one by the user.
+            </p>
+        </section>
+        <section>
+            <h4>What could improve?</h4>
+            <p>
+                I think that the main aspects of my project that need to improve are the styling of the project to make
+                it more visually attractive, and the way how the Express JS server is built. There is still room for
+                improvement in these two areas.
+            </p>
+        </section>
+        <section>
+            <h4>Take-home lesson:</h4>
+            <p>
+                JavaScript is a very powerful tool, and I encourage you to dedicate time to learn it. JavaScript is used
+                very often in web applications, so knowing how to properly use it in both the front end and the back end
+                of your application is something desirable. Currently many job opportunities ask for JavaScript
+                knowledge, so it will be something worth your time to learn.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

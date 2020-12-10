@@ -40,6 +40,10 @@ app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname+'/Pages/About.html'));
 })
 
+app.get('/exhibit', (req, res) => {
+    res.sendFile(path.join(__dirname+'/Pages/Exhibit.html'));
+})
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 })
