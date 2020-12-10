@@ -22,18 +22,18 @@ window.addEventListener('load', function(){
         blogs.forEach(blog => {
             let rowContainer = document.querySelector(`#row-${currRow}`)
             rowContainer.appendChild(document.createElement('p')).outerHTML = `
-            <div class="col-lg-4">
-                <div class="card mb-3">
-                    <div class="card-header bg-dark  text-white">
-                        <h5>${blog.title}</h5>
-                    </div>
-                    <div class="card-body bg-light">
-                        <p>${blog.description}</p>
-                        <p>Category: ${blog.category}</p>
-                        <p>Posted on: ${blog.postedOnDate}</p>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-header bg-dark  text-white">
+                            <h5>${blog.title}</h5>
+                        </div>
+                        <div class="card-body bg-light">
+                            <p>${blog.description}</p>
+                            <p>Category: ${blog.category}</p>
+                            <p>Posted on: ${blog.postedOnDate}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             `;
             if(counter == 3){
                 currRow++;

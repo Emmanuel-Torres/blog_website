@@ -1,6 +1,5 @@
 main{
     margin: 12px;
-    /* text-align: center; */
 }
 
 label{
@@ -23,6 +22,10 @@ input[type=text], #category, textarea{
     border-color: black;
 }
 
+input:hover, #category:hover, textarea:hover {
+    background-color: #eeeeee;
+} 
+
 .button {
     background-color: #b8b8b8;
     border-style: solid;
@@ -38,7 +41,3 @@ input[type=text], #category, textarea{
     background-color: black;
     color: white;
 }
-
-input:hover, #category:hover, textarea:hover {
-    background-color: #eeeeee;
-} 

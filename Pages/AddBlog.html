@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./addBlog.css">
     <link rel="stylesheet" href="./sharedHeader.css">
-    <script src="./print-categories.js"></script>    
+    <script src="./print-categories.js"></script>
 </head>
 
 <body>
     <header>
-        <a href="/" class="m-2 header-title">Add New Blog</a>
+        <a href="/addblog" class="m-2 header-title">Add New Blog</a>
         <div class="header-info">
             <a class="header-home" href="/">Home</a>
             <a href="/about">About</a>
@@ -28,8 +28,9 @@
             <textarea id="desc" name="desc" rows="4" cols="22" required></textarea><br>
             <label for="category">Category:</label><br>
             <input list="category-list" id="category" name="category">
-        
+
             <datalist id="category-list">
+                <!-- DataList is Dynamically added via JavaScript -->
             </datalist>
 
             <br><input class="button" type="submit" value="Post Blog">

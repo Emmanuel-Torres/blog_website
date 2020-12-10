@@ -10,9 +10,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true }));
 app.use(express.static('Pages/Styles'));
 app.use(express.static('Pages/Scripts'));
+app.use(express.static('Pages/Images'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname+'/Pages/index.html'));
+    res.sendFile(path.join(__dirname+'/Pages/Index.html'));
 });
 
 app.get('/blogs', (req, res) => {
@@ -20,7 +21,7 @@ app.get('/blogs', (req, res) => {
 });
 
 app.get('/addBlog', (req, res) => {
-    res.sendFile(path.join(__dirname+'/Pages/addblog.html'));
+    res.sendFile(path.join(__dirname+'/Pages/AddBlog.html'));
 });
 
 app.post('/addblog', (req, res) => {
@@ -36,7 +37,7 @@ app.post('/addblog', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname+'/Pages/about.html'));
+    res.sendFile(path.join(__dirname+'/Pages/About.html'));
 })
 
 app.listen(port, () => {
