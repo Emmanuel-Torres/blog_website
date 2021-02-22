@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 3000;
+const port = 80;
 const Blog = require('./Models/Blog.js');
 
 let blogs = [new Blog('Test Blog', 'Test Description', 'Test Category', '01/01/1961')];
